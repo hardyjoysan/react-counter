@@ -7,8 +7,8 @@ function App() {
       <header className="App-header">
 
         <Countdown
-          date="2020/10/28" // {Year/Month/Day}
-          time="6:30:00"   // {Hour:Minute:Second}
+          date="2020/11/05" // {Year/Month/Day}
+          time="14:30:00"   // {Hour:Minute:Second}
           timezone="America/Los_Angeles" 
         />
 

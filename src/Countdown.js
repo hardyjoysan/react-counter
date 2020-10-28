@@ -17,13 +17,13 @@ class Countdown extends Component {
         var time = this.props.time.split(":");
         setInterval(() => {
 
-            var date_end = this.dateWithTimeZone(this.props.timezone, date[0], date[1], date[2], time[0], time[1], time[2]);
-            var date_now = new Date();
+            let date_end = this.dateWithTimeZone(this.props.timezone, date[0], date[1], date[2], time[0], time[1], time[2]);
+            let date_now = new Date();
 
-            var seconds = Math.floor((date_end - (date_now))/1000);
-            var minutes = Math.floor(seconds/60);
-            var hours = Math.floor(minutes/60);
-            var days = Math.floor(hours/24);
+            let seconds = Math.floor((date_end - (date_now))/1000);
+            let minutes = Math.floor(seconds/60);
+            let hours = Math.floor(minutes/60);
+            let days = Math.floor(hours/24);
             
             hours = hours-(days*24);
             minutes = minutes-(days*24*60)-(hours*60);
