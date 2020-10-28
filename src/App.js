@@ -1,22 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Countdown from './Countdown';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <Countdown
+          date="2020/10/28" // {Year/Month/Day}
+          time="6:30:00"   // {Hour:Minute:Second}
+          timezone="America/Los_Angeles" 
+        />
+
       </header>
     </div>
   );
